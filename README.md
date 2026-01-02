@@ -123,3 +123,9 @@ You can access the dashboard in Tableau Public using this [link](https://public.
 - **Sample size risk** - 30 days at minimum CLT threshold for inferential statistics
 - **Missing data** - No intraday timestamps, start/end locations, or rider demographics (GDPR-compliant but analytically limiting)
 - **Quality issues** - Drivers with geographically impossible trips on same day; age/experience mismatches suggest faulty data capture
+
+---
+## Authors
+- [Diogo António Semedo Amaro](https://www.linkedin.com/in/diogo-antonio-semedo-amaro/)
+- [Diogo Ravara](https://www.linkedin.com/in/diogo-ravara-1a282a222/)
+- [Fernando Moyano Ramírez](https://www.linkedin.com/in/fernando-moyano-ram%C3%ADrez-94602319b/)
