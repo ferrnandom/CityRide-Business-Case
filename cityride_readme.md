@@ -4,6 +4,7 @@ CityRide generated strong operations in November 2024 but faced suboptimal promo
 
 **Tools Used:** R, PostgreSQL, Tableau  
 **Data Period:** November 2024 (1,200+ rides across 5 U.S. cities)
+
 **Full Business Case:** You can read the complete document with all the process and conclusions [here](https://docs.google.com/document/d/1fddXVlV6fQBr0umGHUAio6tUC8fIrdYKUXU8z2GFzKg/edit?usp=sharing)
 
 ---
@@ -76,7 +77,7 @@ Migrated from flat CSV to PostgreSQL star schema:
 
 ### Tableau Dashboard (2 pages)
 
-You can access the dashboard using this [link](https://public.tableau.com/app/profile/juan.fernando.moyano.ram.rez/viz/CityRides_17660962208610/CityRidesHistory)
+You can access the dashboard in Tableau Public using this [link](https://public.tableau.com/app/profile/juan.fernando.moyano.ram.rez/viz/CityRides_17660962208610/CityRidesHistory)
 
 **Page 1 - Operations Overview:**
 - KPIs: Revenue, Rides, Avg Fare, Rating, Distance
