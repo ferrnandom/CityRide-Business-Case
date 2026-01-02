@@ -1,0 +1,138 @@
+# CityRide: Data Infrastructure & Operational Optimization for Ride-Sharing Growth
+
+CityRide generated strong operations in November 2024 but faced suboptimal promotion strategy and critical data quality issues. This project identifies a **$1,307.87/month revenue opportunity** through intelligent promotion redesign and uncovers a **compliance risk affecting 16 drivers (16% of fleet)**.
+
+**Tools Used:** R, PostgreSQL, Tableau  
+**Data Period:** November 2024 (1,200+ rides across 5 U.S. cities)
+
+---
+
+## 1. Business Context
+
+CityRide was preparing for rapid scale-up but faced three critical problems:
+- **Data Infrastructure:** Operating from flat CSV files with no relational structure
+- **Promotion Confusion:** Running three discount tiers without understanding customer value drivers
+- **Zero Visibility:** No framework to catch data quality issues before they become compliance nightmares
+
+---
+
+## 2. Dataset & Metrics
+
+**Star Schema Design:**
+- **Fact Table:** `Fact_Ride` (1,200+ transactions)
+- **Dimensions:** Driver (100), Date (30 days), City (5), Promotion (4 tiers)
+
+**Key Metrics:** 1,200+ rides | Avg fare $44.70 | Avg rating 4.26/5 | Avg distance 25.2 km
+
+---
+
+## 3. Key Insights & Impact
+
+### Insight 1: Promotion Strategy Disconnect ($1,307.87/month opportunity)
+
+**Finding:** All three discount codes (5%, 10%, 20%) are used in nearly equal proportions. Theory predicts higher discounts should drive higher volume—they don't.
+
+**Root Cause:** Customers value the *presence* of a discount, not its monetary value.
+
+**Recommendation:** Replace the unprofitable 20% "SAVE20" discount with 10% offer.
+
+| Metric | Amount |
+|--------|--------|
+| Current revenue (SAVE20 rides) | $10,462.95 |
+| Hypothetical revenue (10% instead) | $11,770.82 |
+| **Monthly opportunity** | **$1,307.87** |
+| Annual impact | $15,694 |
+
+---
+
+### Insight 2: Critical Compliance Risk
+
+**Finding:** 16 drivers (16% of fleet) report age/experience combinations that violate legal working requirements. 8 drivers appear licensed before age 16.
+
+**Business Impact:** Reputational catastrophe if discovered publicly + regulatory liability.
+
+**Recommendation:** Immediate audit with authorities + overhaul background check procedures.
+
+---
+
+### Insight 3: City-Level Pricing Anomaly
+
+Chicago shows 9.3% higher average fare ($48.7 vs. $43-44) despite similar distances and ratings. Likely supply-side constraint—opportunity for driver recruitment targeting.
+
+---
+
+## 4. Deliverables
+
+### Data Infrastructure
+
+Migrated from flat CSV to PostgreSQL star schema:
+- 40% storage reduction (integer keys vs. repeated text)
+- Efficient indexing for 10x data volume scalability
+- Foundation for historical tracking and cohort analysis
+
+### Tableau Dashboard (2 pages)
+
+**Page 1 - Operations Overview:**
+- KPIs: Revenue, Rides, Avg Fare, Rating, Distance
+- Daily volume & pricing trends
+- Promotion effectiveness by day type
+- Driver performance audit table
+
+**Page 2 - Geographic Analysis:**
+- City-level ride distribution map
+- Revenue vs. volume scatter (outlier detection)
+- Distance vs. duration correlation
+
+---
+
+## 5. Action Plan
+
+**Immediate (Q4 2024 - Q1 2025):**
+- [ ] Replace SAVE20 with SAVE10 promotion
+- [ ] Monitor weekly churn for 4 weeks (trigger threshold: >5% drop)
+- [ ] Audit 16 flagged drivers with authorities
+- [ ] Deploy dashboard for management review
+
+**Short-Term (Q1-Q2 2025):**
+- [ ] Implement tipping feature for driver retention
+- [ ] Investigate Chicago supply constraints
+- [ ] Extend data to 12+ months for seasonality analysis
+
+**Future (2026):**
+- [ ] Predictive CAC modeling
+- [ ] Cohort retention analysis
+- [ ] Dynamic pricing optimization
+
+---
+
+## 6. Limitations
+
+- **Single month only** - November 2024 captured pre-holiday patterns; seasonal bias limits generalization
+- **Sample size risk** - 30 days at minimum CLT threshold for inferential statistics
+- **Missing data** - No intraday timestamps, start/end locations, or rider demographics (GDPR-compliant but analytically limiting)
+- **Quality issues** - Drivers with geographically impossible trips on same day; age/experience mismatches suggest faulty data capture
+
+---
+
+## 7. What Went Well / What I'd Improve
+
+**What Went Well:**
+✅ Star schema supports multi-dimensional analysis  
+✅ Uncovered non-obvious behavioral insight (promotion psychology)  
+✅ Caught critical compliance issue before it became public  
+✅ All recommendations are quantified and actionable  
+
+**What I'd Improve:**
+- Build cohort analysis for driver retention tracking
+- Add predictive modeling for "if we continue this rate" scenarios
+- Implement dbt for transformation documentation
+- Integrate live data feeds instead of monthly snapshots
+
+---
+
+## 8. Authors
+
+Diogo António Semedo Amaro | Diogo Matias Ravara | Fernando Moyano Ramírez
+
+**Course:** Data Management and Visualization (MSc Business Administration & Data Science)  
+**Date:** December 19, 2025
