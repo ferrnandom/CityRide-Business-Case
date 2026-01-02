@@ -4,6 +4,7 @@ CityRide generated strong operations in November 2024 but faced suboptimal promo
 
 **Tools Used:** R, PostgreSQL, Tableau  
 **Data Period:** November 2024 (1,200+ rides across 5 U.S. cities)
+**Full Business Case:** You can read the complete document with all the process and conclusions [here](https://docs.google.com/document/d/1fddXVlV6fQBr0umGHUAio6tUC8fIrdYKUXU8z2GFzKg/edit?usp=sharing)
 
 ---
 
@@ -23,6 +24,7 @@ CityRide was preparing for rapid scale-up but faced three critical problems:
 - **Dimensions:** Driver (100), Date (30 days), City (5), Promotion (4 tiers)
 
 **Key Metrics:** 1,200+ rides | Avg fare $44.70 | Avg rating 4.26/5 | Avg distance 25.2 km
+
 
 <img width="812" height="617" alt="Image" src="https://github.com/user-attachments/assets/6d6ff2ef-52a7-4258-a467-dd76a3ed50aa" />
 
@@ -74,11 +76,14 @@ Migrated from flat CSV to PostgreSQL star schema:
 
 ### Tableau Dashboard (2 pages)
 
+You can access the dashboard using this [link](https://public.tableau.com/app/profile/juan.fernando.moyano.ram.rez/viz/CityRides_17660962208610/CityRidesHistory)
+
 **Page 1 - Operations Overview:**
 - KPIs: Revenue, Rides, Avg Fare, Rating, Distance
 - Daily volume & pricing trends
 - Promotion effectiveness by day type
 - Driver performance audit table
+  
 
 <img width="1628" height="692" alt="Image" src="https://github.com/user-attachments/assets/5e9e6c43-3a1b-4efd-8cca-a7a74d3c3788" />
 
@@ -86,6 +91,7 @@ Migrated from flat CSV to PostgreSQL star schema:
 - City-level ride distribution map
 - Revenue vs. volume scatter (outlier detection)
 - Distance vs. duration correlation
+
 
 <img width="1258" height="732" alt="Image" src="https://github.com/user-attachments/assets/36f095e4-27ab-438a-b7ff-35f2391e27b4" />
 
