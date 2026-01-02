@@ -24,6 +24,8 @@ CityRide was preparing for rapid scale-up but faced three critical problems:
 
 **Key Metrics:** 1,200+ rides | Avg fare $44.70 | Avg rating 4.26/5 | Avg distance 25.2 km
 
+<img width="812" height="617" alt="Image" src="https://github.com/user-attachments/assets/6d6ff2ef-52a7-4258-a467-dd76a3ed50aa" />
+
 ---
 
 ## 3. Key Insights & Impact
@@ -78,10 +80,14 @@ Migrated from flat CSV to PostgreSQL star schema:
 - Promotion effectiveness by day type
 - Driver performance audit table
 
+<img width="1628" height="692" alt="Image" src="https://github.com/user-attachments/assets/5e9e6c43-3a1b-4efd-8cca-a7a74d3c3788" />
+
 **Page 2 - Geographic Analysis:**
 - City-level ride distribution map
 - Revenue vs. volume scatter (outlier detection)
 - Distance vs. duration correlation
+
+<img width="1258" height="732" alt="Image" src="https://github.com/user-attachments/assets/36f095e4-27ab-438a-b7ff-35f2391e27b4" />
 
 ---
 
@@ -111,28 +117,3 @@ Migrated from flat CSV to PostgreSQL star schema:
 - **Sample size risk** - 30 days at minimum CLT threshold for inferential statistics
 - **Missing data** - No intraday timestamps, start/end locations, or rider demographics (GDPR-compliant but analytically limiting)
 - **Quality issues** - Drivers with geographically impossible trips on same day; age/experience mismatches suggest faulty data capture
-
----
-
-## 7. What Went Well / What I'd Improve
-
-**What Went Well:**
-✅ Star schema supports multi-dimensional analysis  
-✅ Uncovered non-obvious behavioral insight (promotion psychology)  
-✅ Caught critical compliance issue before it became public  
-✅ All recommendations are quantified and actionable  
-
-**What I'd Improve:**
-- Build cohort analysis for driver retention tracking
-- Add predictive modeling for "if we continue this rate" scenarios
-- Implement dbt for transformation documentation
-- Integrate live data feeds instead of monthly snapshots
-
----
-
-## 8. Authors
-
-Diogo António Semedo Amaro | Diogo Matias Ravara | Fernando Moyano Ramírez
-
-**Course:** Data Management and Visualization (MSc Business Administration & Data Science)  
-**Date:** December 19, 2025
