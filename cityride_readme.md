@@ -4,6 +4,7 @@ CityRide generated strong operations in November 2024 but faced suboptimal promo
 
 **Tools Used:** R, PostgreSQL, Tableau  
 **Data Period:** November 2024 (1,200+ rides across 5 U.S. cities)
+**Data Period:** November 2024 (1,200+ rides across 5 U.S. cities)
 **Full Business Case:** You can read the complete document with all the process and conclusions [here](https://docs.google.com/document/d/1fddXVlV6fQBr0umGHUAio6tUC8fIrdYKUXU8z2GFzKg/edit?usp=sharing)
 
 ---
